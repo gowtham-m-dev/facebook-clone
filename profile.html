@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FaceBook</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <a href="./index.html">
+          <img src="./assets/images/logo.png" class="logo" />
+        </a>
+        <ul>
+          <li><img src="./assets/images/notification.png" /></li>
+          <li><img src="./assets/images/inbox.png" /></li>
+          <li><img src="./assets/images/video.png" /></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="./assets/images/search.png" />
+          <input type="text" placeholder="search" />
+        </div>
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+          <img src="./assets/images/gowtham-profile.png" />
+        </div>
+      </div>
+      <!-- ? dropdown settings menu -->
+      <div class="settings-menu">
+        <div id="dark-btn">
+          <span></span>
+        </div>
+        <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img src="./assets/images/profile-pic.png" />
+            <div>
+              <p>Gowtham</p>
+              <a href="./assets/profile.html">See Your Profile</a>
+            </div>
+          </div>
+          <hr />
+          <div class="user-profile">
+            <img src="./assets/images/feedback.png" />
+            <div>
+              <p>Give your Feedback</p>
+              <a href="#">Help us to improve the new design</a>
+            </div>
+          </div>
+          <hr />
+          <div class="settings-links">
+            <img src="./assets/images/setting.png" class="settings-icon" />
+            <a href="#"
+              >Setting & Privacy
+              <img src="./assets/images/arrow.png" width="10px" />
+            </a>
+          </div>
+          <div class="settings-links">
+            <img src="./assets/images/help.png" class="settings-icon" />
+            <a href="#"
+              >Help & Support
+              <img src="./assets/images/arrow.png" width="10px" />
+            </a>
+          </div>
+          <div class="settings-links">
+            <img src="./assets/images/display.png" class="settings-icon" />
+            <a href="#"
+              >Display & Accessibility
+              <img src="./assets/images/arrow.png" width="10px" />
+            </a>
+          </div>
+          <div class="settings-links">
+            <img src="./assets/images/logout.png" class="settings-icon" />
+            <a href="#"
+              >Logout
+              <img src="./assets/images/arrow.png" width="10px" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- ? Profile page -->
+    <div class="profile-container">
+      <img src="./assets/images/cover.png" class="cover-img" />
+      <div class="profile-details">
+        <div class="pd-left">
+          <div class="pd-row">
+            <img src="./assets/images/gowtham-profile.png" class="pd-image" />
+            <div>
+              <h3>Gowtham</h3>
+              <p>120 Friends - 20 mutual</p>
+              <img src="./assets/images/member-1.png" />
+              <img src="./assets/images/member-2.png" />
+              <img src="./assets/images/member-3.png" />
+              <img src="./assets/images/member-4.png" />
+            </div>
+          </div>
+        </div>
+        <div class="pd-right">
+          <button>
+            <img type="button" src="./assets/images/add-friends.png" />
+            Friend
+          </button>
+          <button type="button">
+            <img src="./assets/images/message.png" />
+            Message
+          </button>
+          <br>
+          <a href="#">
+            <img src="./assets/images/more.png"></img>
+          </a>
+        </div>
+      </div>
+      <div class="profile-info">
+        <div class="info-col">
+            <div class="profile-intro">
+                <h3>Intro</h3>
+                <p class="intro-text">Believe in yourself and you can do unbelievable things
+                    <img src="./assets/images/feeling.png">
+                </p>
+                <hr>
+                <ul>
+                    <li><img src="./assets/images/profile-job.png"> Director at facebook Ltd</li>
+                    <li><img src="./assets/images/profile-study.png"> Studied at harward university</li>
+                    <li><img src="./assets/images/profile-study.png"> Went to DPS Delhi</li>
+                    <li><img src="./assets/images/profile-home.png">   Lives in Bangalore, India</li>
+                    <li><img src="./assets/images/profile-location.png">From Bangalore, India</li>
+                </ul>
+            </div>
+            <div class="profile-intro">
+                <div class="title-box">
+                    <h3>Photos</h3>
+                    <a href="">All Photos</a>
+                </div>
+                <p>120 (10 mutual)</p>
+                <div class="friends-box">
+                    <div><img src="./assets/images/member-1.png"> <p>Joseph</p> </div>
+                    <div> <img src="./assets/images/member-1.png"><p>Nathan N</p></div>
+                    <div><img src="./assets/images/member-3.png"><p>George D</p></div>
+                    <div><img src="./assets/images/member-4.png"><p>Francis L</p></div>
+                    <div><img src="./assets/images/member-5.png"><p>Antony E</p></div>
+                    <div><img src="./assets/images/member-6.png"><p>Michael A</p></div>
+                    <div><img src="./assets/images/member-7.png"><p>Edward M</p></div>
+                    <div><img src="./assets/images/member-8.png"><p>Bradon C</p></div>
+                    <div><img src="./assets/images/member-9.png"><p>James Doe</p></div>
+                </div>
+            </div>
+           </div>
+        <div class="post-col">
+            <div class="write-post-container">
+                <div class="user-profile">
+                  <img src="./assets/images/gowtham-profile.png" />
+                  <div class="">
+                    <p>Gowtham</p>
+                    <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                  </div>
+                </div>
+                <div class="post-input-container">
+                  <textarea
+                    rows="3"
+                    placeholder="what's on your mind, john?"
+                  ></textarea>
+                  <div class="post-input-links">
+                    <div class="add-post-links">
+                      <a href="#">
+                        <img src="./assets/images/live-video.png" />Live Video
+                      </a>
+                      <a href="#"> <img src="./assets/images/photo.png" /> Photo/Video</a>
+                      <a href="#">
+                        <img src="./assets/images/feeling.png" />Feeling/Activity
+                      </a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+             <div class="post-container">
+                <div class="post-row">
+                  <div class="user-profile">
+                    <img src="./assets/images/profile-pic.png" />
+                    <div>
+                      <p>John Nicholson</p>
+                      <span>June 24 2021, 13;40pm</span>
+                    </div>
+                  </div>
+                  <a href="">
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </a>
+                </div>
+                <p class="post-text">
+                  Follow more to learn lot of contents website development and Ui
+                  designs and <span>Mobile App Development</span> and Fullstack
+                  Development
+                  <a href="#">#TutorGowtham</a>
+                  <a href="#">#Youtube Channel</a>
+                </p>
+                <img src="./assets/images/feed-image-1.png" class="post-img" />
+                <div class="post-row">
+                  <div class="activity-icons">
+                    <div><img src="./assets/images/like-blue.png" /></div>
+                    <div><img src="./assets/images/comments.png" /></div>
+                    <div><img src="./assets/images/share.png" /></div>
+                  </div>
+                  <div class="post-profile-icon">
+                    <img src="./assets/images/profile-pic.png" />
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="post-container">
+                <div class="post-row">
+                  <div class="user-profile">
+                    <img src="./assets/images/photo2.png" />
+                    <div>
+                      <p>cholson</p>
+                      <span>June 24 2021, 13;40pm</span>
+                    </div>
+                  </div>
+                  <a href="">
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </a>
+                </div>
+                <p class="post-text">
+                  Follow more to learn lot of contents website development and Ui
+                  designs and <span>Mobile App Development</span> and Fullstack
+                  Development
+                  <a href="#">#TutorGowtham</a>
+                  <a href="#">#Youtube Channel</a>
+                </p>
+                <img src="./assets/images/feed-image-2.png" class="post-img" />
+                <div class="post-row">
+                  <div class="activity-icons">
+                    <div><img src="./assets/images/like-blue.png" /></div>
+                    <div><img src="./assets/images/comments.png" /></div>
+                    <div><img src="./assets/images/share.png" /></div>
+                  </div>
+                  <div class="post-profile-icon">
+                    <img src="./assets/images/profile-pic.png" />
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="post-container">
+                <div class="post-row">
+                  <div class="user-profile">
+                    <img src="./assets/images/photo3.png" />
+                    <div>
+                      <p>Braveyet</p>
+                      <span>June 24 2021, 15;50pm</span>
+                    </div>
+                  </div>
+                  <a href="">
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </a>
+                </div>
+                <p class="post-text">
+                  Follow more to learn lot of contents website development and Ui
+                  designs and <span>Mobile App Development</span> and Fullstack
+                  Development
+                  <a href="#">#TutorGowtham</a>
+                  <a href="#">#Youtube Channel</a>
+                </p>
+                <img src="./assets/images/feed-image-3.png" class="post-img" />
+                <div class="post-row">
+                  <div class="activity-icons">
+                    <div><img src="./assets/images/like-blue.png" /></div>
+                    <div><img src="./assets/images/comments.png" /></div>
+                    <div><img src="./assets/images/share.png" /></div>
+                  </div>
+                  <div class="post-profile-icon">
+                    <img src="./assets/images/photo4.png" />
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="post-container">
+                <div class="post-row">
+                  <div class="user-profile">
+                    <img src="./assets/images/photo4.png" />
+                    <div>
+                      <p>stephen</p>
+                      <span>June 24 2021, 11;20pm</span>
+                    </div>
+                  </div>
+                  <a href="">
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </a>
+                </div>
+                <p class="post-text">
+                  Follow more to learn lot of contents website development and Ui
+                  designs and <span>Mobile App Development</span> and Fullstack
+                  Development
+                  <a href="#">#TutorGowtham</a>
+                  <a href="#">#Youtube Channel</a>
+                </p>
+                <img src="./assets/images/feed-image-4.png" class="post-img" />
+                <div class="post-row">
+                  <div class="activity-icons">
+                    <div><img src="./assets/images/like-blue.png" /></div>
+                    <div><img src="./assets/images/comments.png" /></div>
+                    <div><img src="./assets/images/share.png" /></div>
+                  </div>
+                  <div class="post-profile-icon">
+                    <img src="./assets/images/profile-pic.png" />
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="post-container">
+                <div class="post-row">
+                  <div class="user-profile">
+                    <img src="./assets/images/photo5.png" />
+                    <div>
+                      <p>jack</p>
+                      <span>June 25 2021, 08;40pm</span>
+                    </div>
+                  </div>
+                  <a href="">
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                  </a>
+                </div>
+                <p class="post-text">
+                  Follow more to learn lot of contents website development and Ui
+                  designs and <span>Mobile App Development</span> and Fullstack
+                  Development
+                  <a href="#">#TutorGowtham</a>
+                  <a href="#">#Youtube Channel</a>
+                </p>
+                <img src="./assets/images/feed-image-5.png" class="post-img" />
+                <div class="post-row">
+                  <div class="activity-icons">
+                    <div><img src="./assets/images/like-blue.png" /></div>
+                    <div><img src="./assets/images/comments.png" /></div>
+                    <div><img src="./assets/images/share.png" /></div>
+                  </div>
+                  <div class="post-profile-icon">
+                    <img src="./assets/images/profile-pic.png" />
+                    <i class="fas fa-caret-down"></i>
+                  </div>
+                </div>
+              </div>
+         </div>
+        </div>
+    </div>
+
+    <div class="footer">
+      <p>Copyrights 2024 - Developer Gowtham</p>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
